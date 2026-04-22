@@ -33,7 +33,8 @@ Create a script.js file
 Link the JavaScript file:
 <script src="script.js"></script>
 Run the HTML file in your browser
-🎯 Learning Outcome
+```
+### Learning Outcome
 
 By the end of this section, I am able to:
 
