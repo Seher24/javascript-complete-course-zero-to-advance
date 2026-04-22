@@ -1,0 +1,131 @@
+📘 BASICS — JavaScript Variables
+
+
+LET,CONST,VAR
+────────────────────────────────────
+
+📌 What are Variables in JavaScript?
+
+Variables are used to store data.
+Think of them like containers where we store things at home 🏠
+
+────────────────────────────────────
+
+🧾 Declaring Variables
+
+In JavaScript, we use these keywords:
+
+🔹 var
+🔹 let
+🔹 const
+
+Example:
+
+var x;
+
+👉 'var' is the keyword
+👉 'x' is the variable name (identifier)
+
+────────────────────────────────────
+
+💡 Other Ways to Declare Variables
+
+let x;
+const x;
+
+────────────────────────────────────
+
+📊 Types of Keywords
+
+🔴 var
+- Oldest way to declare variables
+- Most commonly used in older JavaScript
+
+🟡 let
+- Introduced in ES6 (modern JavaScript)
+- Block-scoped (we’ll learn this later)
+
+🟢 const
+- Used for constants
+- Value cannot be changed once assigned
+
+────────────────────────────────────
+
+📥 Assigning Values
+
+You can assign values using "="
+
+Example:
+
+var x = 30;
+
+👉 This creates a variable x and stores 30 in it
+
+────────────────────────────────────
+
+🧠 Data Types in Variables
+
+Variables can store different types of data:
+
+🔢 Numbers
+📄 Strings
+📦 Objects
+📚 Arrays
+
+Example:
+
+var x = "Hello World"; // string
+
+────────────────────────────────────
+
+⚠️ JavaScript Naming Rules
+
+A variable name must start with:
+
+✔️ A letter (A-Z or a-z)
+✔️ A dollar sign ($)
+✔️ An underscore (_)
+
+After that, you can use:
+letters, digits, _, $
+
+❌ Numbers cannot be at the start
+
+🧠 JavaScript is CASE SENSITIVE:
+firstName ≠ firstname
+
+────────────────────────────────────
+
+🟡 let Keyword (Block Scope)
+
+let creates block-scoped variables
+
+Example:
+
+let x = 10;
+
+if (x > 5) {
+    let y = 20;
+    console.log(y); // 20
+}
+
+console.log(y); 
+// ❌ ReferenceError: y is not defined
+
+👉 y only exists inside the block {}
+
+────────────────────────────────────
+
+🟢 const Keyword
+
+const is used for constant values
+
+Example:
+
+const a = 4;
+console.log(a); // 4
+
+a = 5;
+// ❌ Error: Cannot assign to constant variable
+
+👉 Once set, value cannot be changed
