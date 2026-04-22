@@ -13,13 +13,9 @@ Inline JavaScript
 Internal JavaScript
 External JavaScript
 💻 First JavaScript Program
-
 Example:
-
 alert("Hello, World!");
-
 Other ways to display output:
-
 console.log("Hello, World!");
 document.write("Hello, World!");
 🛠️ How to Run JavaScript
