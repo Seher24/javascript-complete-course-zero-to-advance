@@ -1,19 +1,28 @@
-🚀 JavaScript Learning Journey
-📚 Section 1: Introduction to JavaScript
+# 🚀 JavaScript Learning Journey  
+
+## 📚 Section 1: Introduction to JavaScript  
 
 This section covers the fundamentals of JavaScript and how to write your first program.
 
-📌 Topics Covered
-What is JavaScript
-Interactive vs Dynamic Websites
-Why JavaScript is important
-Uses of JavaScript
-How to add JavaScript to a webpage
-Inline JavaScript
-Internal JavaScript
-External JavaScript
-💻 First JavaScript Program
-Example:
+---
+
+## 📌 Topics Covered  
+
+- What is JavaScript  
+- Interactive vs Dynamic Websites  
+- Why JavaScript is important  
+- Uses of JavaScript  
+- How to add JavaScript to a webpage  
+  - Inline JavaScript  
+  - Internal JavaScript  
+  - External JavaScript  
+
+---
+
+## 💻 First JavaScript Program  
+
+### Example:
+```javascript
 alert("Hello, World!");
 Other ways to display output:
 console.log("Hello, World!");
