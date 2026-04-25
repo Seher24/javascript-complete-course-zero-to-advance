@@ -208,7 +208,8 @@ console.log(result); // 14
 4 - 2 - 1 // 1
 ➡️ Right to Left
 2 ** 3 ** 2 // 512
-🎯 Key Takeaways
+```
+# 🎯 Key Takeaways
 Operators perform actions on values
 Comparison returns boolean
 Logical operators control conditions
