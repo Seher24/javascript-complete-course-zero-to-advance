@@ -215,3 +215,68 @@ Comparison returns boolean
 Logical operators control conditions
 Precedence decides execution order
 Associativity decides execution direction
+
+## 📘 SECTION 4 — LOOPS IN JAVASCRIPT
+
+---
+
+## 📌 What are Loops?
+
+In programming, loops are used to repeat a block of code multiple times.
+
+---
+
+## 🔹 FOR LOOP
+
+Used when the number of iterations is known.
+
+```js
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+🔹 WHILE LOOP
+
+Used when the number of iterations is unknown.
+
+let i = 0;
+while (i <= 10) {
+  console.log(i);
+  i++;
+}
+🔹 DO...WHILE LOOP
+
+Runs at least once even if condition is false.
+
+let i = 1;
+do {
+  console.log(i);
+  i++;
+} while (i <= 5);
+🔹 WHEN TO USE?
+for loop → known iterations
+while loop → unknown iterations
+do...while → must run at least once
+🔹 BREAK STATEMENT
+
+Stops the loop immediately.
+
+for (let i = 1; i <= 5; i++) {
+  if (i == 3) break;
+  console.log(i);
+}
+🔹 CONTINUE STATEMENT
+
+Skips the current iteration.
+
+for (let i = 1; i <= 5; i++) {
+  if (i == 3) continue;
+  console.log(i);
+}
+```
+
+# 🎯 SUMMARY
+for → fixed iterations
+while → condition-based
+do...while → runs once guaranteed
+break → stops loop
+continue → skips iteration
