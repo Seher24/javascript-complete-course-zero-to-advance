@@ -1,0 +1,162 @@
+📘 BASICS — LOOPS IN JAVASCRIPT (SECTION 4)
+
+────────────────────────────────────
+
+📌 What are Loops?
+
+In programming, loops are used to repeat a block of code multiple times.
+
+👉 Example: Display a message 100 times using a loop instead of writing it manually.
+
+────────────────────────────────────
+
+🔹 FOR LOOP
+
+Used when the number of iterations is known.
+
+Syntax:
+for (initialization; condition; update) {
+// code
+}
+
+Example 1: Display a text 10 times
+for (let i = 1; i <= 10; i++) {
+console.log("GreatStack");
+}
+
+Example 2: Display numbers from 1 to 10
+for (let i = 1; i <= 10; i++) {
+console.log(i);
+}
+
+Example 3: Loop through an array
+let coding = ["JavaScript", "Python", "CPP"];
+for (let i = 0; i < coding.length; i++) {
+console.log(coding[i]);
+}
+
+────────────────────────────────────
+
+🔹 NESTED LOOP (Loop inside a loop)
+
+for (let i = 1; i <= 5; i++) {
+console.log(i);
+
+for (let j = 1; j <= 3; j++) {
+console.log("Inner Loop: " + j);
+}
+}
+
+────────────────────────────────────
+
+🔹 WHILE LOOP
+
+Used when the number of iterations is unknown.
+
+Syntax:
+while (condition) {
+// code
+}
+
+How it works:
+
+1. Condition is checked first
+2. If true → code runs
+3. Repeats until condition becomes false
+
+Example:
+let i = 0;
+while (i <= 10) {
+console.log(i);
+i++;
+}
+
+────────────────────────────────────
+
+🔹 DO...WHILE LOOP
+
+Syntax:
+do {
+// code
+} while (condition);
+
+How it works:
+
+1. Code runs first
+2. Then condition is checked
+3. Repeats until condition is false
+
+👉 Runs at least once (important difference)
+
+Example:
+let i = 1;
+do {
+console.log(i);
+i++;
+} while (i <= 5);
+
+────────────────────────────────────
+
+🔹 WHEN TO USE WHICH LOOP?
+
+✔ for loop → when iterations are known
+✔ while loop → when iterations are unknown
+✔ do...while → when code must run at least once
+
+────────────────────────────────────
+
+🔹 BREAK STATEMENT
+
+Used to stop the loop immediately.
+
+for (let i = 1; i <= 5; i++) {
+if (i == 3) {
+break;
+}
+console.log(i);
+}
+
+Output:
+1
+2
+
+────────────────────────────────────
+
+🔹 CONTINUE STATEMENT
+
+Used to skip the current iteration.
+
+for (let i = 1; i <= 5; i++) {
+if (i == 3) {
+continue;
+}
+console.log(i);
+}
+
+Output:
+1
+2
+4
+5
+
+────────────────────────────────────
+
+📌 OTHER LOOPS (ADVANCED)
+
+* for...of → used for arrays
+* for...in → used for objects
+
+(Will be covered in advanced JavaScript)
+
+────────────────────────────────────
+
+✅ SUMMARY
+
+* Loops help repeat code efficiently
+* for → fixed iterations
+* while → condition-based
+* do...while → runs at least once
+* break → stops loop
+* continue → skips iteration
+
+────────────────────────────────────
