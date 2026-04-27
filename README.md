@@ -106,3 +106,112 @@ By the end of this section, I am able to:
 ✔️ Write cleaner and predictable JavaScript code  
 
 ---
+
+## 📘 SECTION 3 — OPERATORS IN JAVASCRIPT
+
+---
+
+### 📌 What are Operators?
+
+Operators are symbols used to perform operations on operands.
+
+👉 Operands = values or variables
+
+```js
+console.log(10 + 20); // 30
+
+👉 + is the operator
+👉 10 and 20 are operands
+
+📚 Types of Operators in JavaScript
+Arithmetic Operators
+Assignment Operators
+Comparison Operators
+Logical Operators
+String Operators
+🔢 1. Arithmetic Operators
+
+Used for mathematical calculations.
+
+let sum = 5 + 3;        // 8
+let difference = 10 - 4; // 6
+let product = 2 * 6;     // 12
+let quotient = 15 / 3;   // 5
+let remainder = 17 % 4;  // 1
+let result = 2 ** 4;     // 16
+🧾 2. Assignment Operators
+
+Used to assign values to variables.
+
+let x = 5;
+
+x += 3; // 8
+x -= 2; // 6
+x *= 4; // 24
+x /= 3; // 8
+x %= 5; // 3
+x **= 2; // 9
+🔼 3. Increment / Decrement Operators
+
+Used to increase or decrease value by 1.
+
+➕ Increment (++)
+➖ Decrement (--)
+📌 Prefix
+let a = 10;
+
+console.log(++a); // 11
+console.log(a);   // 11
+
+console.log(--a); // 10
+console.log(a);   // 10
+📌 Postfix
+let b = 10;
+
+console.log(b++); // 10
+console.log(b);   // 11
+
+console.log(b--); // 11
+console.log(b);   // 10
+⚖️ 4. Comparison Operators
+
+Return true or false.
+
+a < b   // less than
+a > b   // greater than
+a <= b  // less than or equal
+a >= b  // greater than or equal
+a == b  // equal (loose)
+a != b  // not equal
+a === b // strict equal
+a !== b // strict not equal
+
+Example:
+
+const a = 10;
+const b = 20;
+
+console.log(a < b);   // true
+console.log(a === b); // false
+🧠 5. Logical Operators
+✔️ AND (&&)
+true && true // true
+✔️ OR (||)
+true || false // true
+✔️ NOT (!)
+!true // false
+📊 Operator Precedence
+let result = 2 + 3 * 4;
+console.log(result); // 14
+🔁 Associativity
+⬅️ Left to Right
+4 - 2 - 1 // 1
+➡️ Right to Left
+2 ** 3 ** 2 // 512
+```
+# 🎯 Key Takeaways
+Operators perform actions on values
+Comparison returns boolean
+Logical operators control conditions
+Precedence decides execution order
+Associativity decides execution direction
