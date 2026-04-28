@@ -1,0 +1,202 @@
+📘 SECTION 5 — JAVASCRIPT FUNCTIONS
+
+────────────────────────────────────
+
+📌 What is a Function?
+
+A function is a block of code that performs a specific task.
+
+✔ Functions are reusable  
+✔ Can be called anywhere in the program  
+
+Syntax:
+
+function functionName() {
+  // code to execute
+}
+
+────────────────────────────────────
+
+🔹 Example: Simple Function
+
+function greet() {
+  console.log("Hello, GreatStack");
+}
+
+greet(); // Hello, GreatStack
+
+────────────────────────────────────
+
+📚 Parameters vs Arguments
+
+👉 Parameters = variables in function definition  
+👉 Arguments = values passed when calling function  
+
+Example:
+
+function greet(firstName, lastName) {
+  console.log("Hello " + firstName + " " + lastName);
+}
+
+greet("Elon", "Musk");
+greet(100, 200);
+
+📌 Important:
+
+greet("Elon");  
+// Hello Elon undefined  
+
+greet("Mr", "Elon", "Musk");  
+// Hello Mr Elon  
+
+────────────────────────────────────
+
+🔹 Default Parameters
+
+If value is not passed, default value is used.
+
+function sum(x, y = 0) {
+  console.log(x + y);
+}
+
+sum(10, 15); // 25  
+sum(10);     // 10  
+
+────────────────────────────────────
+
+🔹 Return Statement
+
+Used to return value from a function.
+
+function add(a, b) {
+  return a + b;
+}
+
+let result = add(10, 15);
+console.log("The sum is " + result); // 25  
+
+📌 Note:
+- Function stops after return  
+- Code after return is not executed  
+
+────────────────────────────────────
+
+🔁 Function Returning Another Function
+
+function fn1(x) {
+  function fn2(y) {
+    return x * y;
+  }
+  return fn2;
+}
+
+let result = fn1(3);
+
+console.log(result);    // function
+console.log(result(2)); // 6
+
+────────────────────────────────────
+
+🔄 Callback Functions
+
+A callback is a function passed as an argument.
+
+function display(result) {
+  console.log(result);
+}
+
+function add(num1, num2, myCallback) {
+  let sum = num1 + num2;
+  myCallback(sum);
+}
+
+add(5, 10, display);
+
+📌 Important:
+Do NOT use parentheses when passing function  
+✔ Correct: display  
+❌ Wrong: display()
+
+────────────────────────────────────
+
+🕶 Anonymous Functions
+
+Functions without a name.
+
+Syntax:
+
+function () {
+  // code
+}
+
+────────────────────────────────────
+
+🔹 Function Expression
+
+let sum = function (x, y) {
+  return x + y;
+};
+
+console.log(sum(5, 10)); // 15
+
+────────────────────────────────────
+
+⚡ Immediately Invoked Function (IIFE)
+
+(function () {
+  console.log("Welcome to GreatStack");
+})();
+
+✔ Runs immediately after definition  
+
+────────────────────────────────────
+
+⏱ setTimeout with Anonymous Function
+
+setTimeout(function () {
+  console.log("Welcome to GreatStack");
+}, 5000);
+
+✔ Runs after 5000ms (5 seconds)
+
+────────────────────────────────────
+
+🔁 Recursive Functions
+
+A function that calls itself.
+
+Basic Syntax:
+
+function myFunction() {
+  myFunction();
+}
+
+📌 Must have a stopping condition
+
+────────────────────────────────────
+
+🔹 Example: Countdown
+
+function countDown(num) {
+  console.log(num);
+  num--;
+
+  if (num >= 0) {
+    countDown(num);
+  }
+}
+
+countDown(10);
+
+────────────────────────────────────
+
+🎯 Key Takeaways
+
+✔ Functions make code reusable  
+✔ Parameters vs Arguments are different  
+✔ Return sends value back  
+✔ Callbacks allow flexible execution  
+✔ Anonymous functions have no name  
+✔ Recursion requires a stopping condition  
+
+────────────────────────────────────
