@@ -1,0 +1,137 @@
+JavaScript Objects
+
+In JavaScript, an object is a non-primitive data type used to store multiple values in the form of key-value pairs.
+
+Syntax:
+const objectName = {
+  key1: value1,
+  key2: value2
+};
+
+Example:
+const person = {
+  firstName: "Elon",
+  lastName: "Musk",
+  age: 35
+};
+
+Objects store:
+1. Properties → key-value pairs
+2. Methods → functions inside objects
+
+Example of Method:
+const person = {
+  firstName: "Elon",
+  greet: function() {
+    console.log("Hello");
+  }
+};
+
+Accessing Object Properties:
+
+1. Dot Notation:
+person.firstName
+
+2. Bracket Notation:
+person["firstName"]
+
+Note: Bracket notation is used when key has spaces or special characters.
+
+Updating Properties:
+person.firstName = "Mr. Elon";
+
+Adding Properties:
+person.company = "Tesla";
+
+Deleting Properties:
+delete person.age;
+
+Nested Objects:
+const person = {
+  name: "Elon",
+  address: {
+    city: "Austin",
+    country: "USA"
+  }
+};
+
+Access:
+person.address.city
+
+Checking Property:
+"age" in person
+
+Looping through Object:
+for (let key in person) {
+  console.log(key + ": " + person[key]);
+}
+
+Object Creation using new:
+const person = new Object();
+person.name = "Elon";
+
+Object Methods (ES6 Short Syntax):
+const person = {
+  greet() {
+    console.log("Hello");
+  }
+};
+
+this Keyword:
+- Refers to current object
+- Used inside methods
+
+Example:
+const person = {
+  name: "Elon",
+  greet() {
+    console.log("Hello " + this.name);
+  }
+};
+
+Constructor Function:
+Used to create multiple objects
+
+function Person(fname, lname) {
+  this.firstName = fname;
+  this.lastName = lname;
+}
+
+const p1 = new Person("Elon", "Musk");
+
+Prototype:
+- Used to share properties/methods
+- Avoids duplication
+
+Person.prototype.getFullName = function() {
+  return this.firstName + " " + this.lastName;
+};
+
+Object Destructuring:
+Extract values easily
+
+const person = {
+  firstName: "Elon",
+  lastName: "Musk"
+};
+
+let { firstName, lastName } = person;
+
+Default Value:
+let { age = 18 } = person;
+
+ES6 Object Short Syntax:
+let firstName = "Elon";
+let lastName = "Musk";
+
+const person = {
+  firstName,
+  lastName
+};
+
+Summary:
+- Objects store data in key-value pairs
+- Methods are functions inside objects
+- this refers to current object
+- Constructor + prototype improves scalability
+- Destructuring simplifies data extraction
